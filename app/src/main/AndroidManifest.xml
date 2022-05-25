@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.filmholic">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FilmHolic">
+        <activity android:name=".RatingACtivity"></activity>
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".EditMovieTempActivity" />
+        <activity android:name=".EditMoviesActivity" />
+        <activity android:name=".FavouritesActivity" />
+        <activity android:name=".DisplayMovieActivity" />
+        <activity android:name=".RegisterMovieActivity" />
+        <activity android:name=".SlashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

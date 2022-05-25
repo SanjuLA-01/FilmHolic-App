@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cutom_layout"
+    tools:context=".SearchActivity">
+
+    <ImageView
+        android:id="@+id/logoDisolay"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginRight="138dp"
+        android:contentDescription="@string/logodisplay"
+        app:srcCompat="@drawable/logofh" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoDisolay"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="-28dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginRight="141dp"
+        android:fontFamily="@font/almendra_display"
+        android:gravity="center"
+        android:text="@string/filmholic"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="482dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#A2ABAB"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/SearchList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginRight="-2dp"
+                android:layout_marginBottom="0dp"
+                android:background="#A2ABAB"
+                android:cacheColorHint="#BA6B6B"
+                android:choiceMode="multipleChoice"
+                android:divider="#01091E"
+                android:dividerHeight="2dp"></ListView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/editSearchText"
+        android:layout_width="263dp"
+        android:layout_height="71dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="139dp"
+        android:autofillHints=""
+        android:background="@drawable/cutom_edittesxt"
+        android:ems="10"
+        android:fontFamily="@font/artifika"
+        android:gravity="center"
+        android:hint="@string/search_here"
+        android:inputType="textPersonName"
+        android:textColor="#FDFCFC"
+        android:textColorHint="#4D5656"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/lookupSearchBtn"
+        android:layout_width="99dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/logobtn"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:text="@string/lookup"
+        android:textColor="#121111"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#100F0F"
+        app:backgroundTintMode="add" />
+
+</RelativeLayout>

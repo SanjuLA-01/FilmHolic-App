@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cutom_layout"
+    tools:context=".DisplayMovieActivity">
+
+    <ImageView
+        android:id="@+id/logoDisolay"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:contentDescription="@string/logodisplay"
+        app:srcCompat="@drawable/logofh" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoDisolay"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:fontFamily="@font/almendra_display"
+        android:gravity="center"
+        android:text="@string/filmholic"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="392dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="100dp"
+        android:background="#A2ABAB"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/listViewAddF"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:dividerHeight="2dp"
+                android:divider="#01091E"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="37dp"
+                android:background="#A2ABAB"
+                android:cacheColorHint="#BA6B6B"
+                android:choiceMode="multipleChoice"></ListView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/BtnAddFav"
+        android:layout_width="344dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/logobtn"
+        android:text="@string/add_to_favourites"
+        android:textColor="#121111"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#100F0F"
+        app:backgroundTintMode="add" />
+
+    <TextView
+        android:id="@+id/DsplayTTExt"
+        android:layout_width="243dp"
+        android:layout_height="73dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="-19dp"
+        android:fontFamily="@font/abel"
+        android:gravity="center|start"
+        android:text="@string/display_movies"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
